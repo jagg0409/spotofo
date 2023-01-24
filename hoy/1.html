@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validar usuario</title>
+    <script>
+    function validate(form){
+        falla   = validaNombre(form.Nom.value)
+    falla  += validaContraseña(form.Pass.value)
+         if (falla == "") return true
+        else {
+            alert(falla); return false
+        }
+    }
+    function validaNombre(field){
+    return(field == "") ? "Ingrese un usuario.\n" : ""
+    }
+    function validaContraseña(field){
+        return(field == "") ? "Ingrese su contraseña\n" : """
+    }
+    </script>
+    <link rel="stylesheet" href=".//2.css">
+</head>
+<body>
+         
+<div id="sobre">
+    <h1 id="so"><img src="/img/sueter.png" id="prin"> ISIS <img src="/img/sueter.png" id="prin"> </h1> </div> 
+    <div id="blanco">asda</div>
+<div id="tab">
+    <form action="valida.php" method="post" onsubmit="return validate(this)">
+        <fileset>
+           <span >
+            <legend id="te"><br><br><h3>VALIDE SU PEDIDO</h3></legend>
+            <p>
+                <label ><p id="te"><br>Correo electronico:</p> 
+                <input type="text" name="Nom" id="camp">
+                </label>
+               
+            </p>
+             
+            <p>
+                <label><p id="te"> Productos(#De referencia)</p>
+                <input type="varchar" name="Pass" id="camp">
+                </label>
+            </p>
+            </span>
+            <input type="submit" value="REVISAR" id="boton">
+            <br><br>
+        </fileset>
+    </form>
+</div>
+     <p>
+        <br>
+        <div id="mas">
+              <p id="igu">.<br><br></p><h3>   VUELVE POR MÁS</h3>
+        <a href="http://localhost/hoy/red.html"><input type="button" Value="Ordenar mas productos" id="boto"></a> <br><br><br><br>
+    </div>
+    </p>
+</body>
+
+<footer>
+    <div id="footer">
+       <div id="log"><img src="/img/sueter.png" id="lo"> ISIS</div>
+      
+        <div id="social"><h4>nuestras redes</h4>
+             <br> <br> <a href="https://es-la.facebook.com/" id="fa">Facebook</a>
+             <br> <br> <a href="https://co.pinterest.com/" id="pi"> Pinterest</a>
+             <br>  <br><a href="https://www.instagram.com/" id="ig"> Instagram</a>
+             <br> <br><a href="https://twitter.com/" id="tw">Twitter </a>  <br> </div>
+        <div id="contacto"> <h4>servicio al cliente</h4>
+        <br><br> +57 3503627710
+        <br><br> <a href="https://www.google.com/gmail/about/" id="fa">Jg2nano@gmail.com</a>
+        
+        
+        </div>
+        <div id="creadores"> <h4>desarrolladores</h4>
+        <br><br> Juan Garcia
+        <br><br> Nicole Sanabria
+        <br><br> Profe
+        </div>
+        <div id="lred">
+       <a href="https://www.instagram.com/jagg0.0/"> <p id="igs">Juan</p><img src="/img/instagram.png" id="iglogo"></a>
+       <a href="https://www.instagram.com/_nicolee_82/"> <p id="igs">Nicole</p> <img src="/img/instagram.png" id="iglogo"></a>
+       <a href=""><p id="igs">Profe</p><img src="/img/instagram.png" id="iglogo"></a>
+        </div>
+
+        
+    </div>
+
+</footer>
+</html>

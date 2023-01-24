@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Cambiar contraseña</title>
+	<meta charset="utf-8">
+	<script>
+		
+		function validate(form){
+			fail   = validaNombre(form.Nom.value)
+    		fail  += validaContraseña(form.Pass.value)
+			fail += validateNewContraseña(form.new.value)
+			if (fail == "") return true
+				else { alert(fail); return false }
+		}
+		function validaEstudiante(field){
+    return(field == "") ? "Ingrese el nombre de usuario.\n" : ""
+    }
+
+	function validaiden(field){
+        return(field == "") ? "Ingrese contraseña.\n" : ""
+    }
+    	 
+     	function validateNewContraseña(field){
+        return(field == "") ? "Ingrese nueva contraseña\n" : ""
+    }
+
+	</script>
+</head>
+<body>
+
+	
+<form method="post" action="cambiar.php" onsubmit="return validate(this)">
+<fieldset>
+	<legend>ASIGNAR NUEVA CONTRASEÑA</legend>
+		<p>
+	<label>Ingrese Usuario:
+		<input type="text" name="Nom">
+	</label>	
+		</p>
+	<p>
+	<label>Ingrese contraseña antigua:
+		<input type="password" name="Pass">
+	</label>	
+		</p>
+
+		<p>
+	<label>Ingrese Nueva Contraseña:
+
+		<input type="password" name="new">
+		<p>
+		<strong>Debe tener ....</strong>
+		</p>
+	</label>	
+		</p>
+	<p>
+    <input type="submit" value="VERIFICAR">
+    <br>
+    
+  </p>
+
+	
+</fieldset>
+
+</form>
+	
+</body>
+</html>

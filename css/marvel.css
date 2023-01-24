@@ -1,0 +1,490 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Inconsolata&display=swap');
+*{
+    margin: 0%;
+    padding: 0;
+    font-family: 'Comic Neue', cursive;
+}
+body{
+  background-color: rgb(246, 225, 255);
+}
+header{
+
+  background:  #f3e5f5;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+  border-color: rgb(195, 155, 211);
+  border-width: 5px;
+  border-style: solid;
+overflow: hidden ;
+  border-bottom: none;
+
+}
+#boton1{
+background-color:  rgb(12, 69, 102) ;
+border-style: none;
+margin-bottom: 100%;
+margin-top: 18px;
+margin-left: 18%;
+float: left;
+}
+
+#icons{
+align-self:baseline;
+  width: 45px;
+position: absolute;
+
+}
+#dc{
+align-self:baseline;
+width: 40px;
+position: absolute;
+float: left;
+margin: 5px;
+margin-left: -10px;
+}
+#comics{
+margin-right: 15px;
+margin: 10px;
+}
+a{
+  text-decoration: none;
+}
+#sobre{
+background-color: rgb(235, 222, 240);
+height: 100px;
+border-color:rgb(195, 155, 211);
+border-width: 5px;
+border-style: solid;
+border-left:none ;
+z-index: 4;
+position: fixed;
+width: 100%;
+display: flex;
+}
+#prin{
+width: 5%;
+margin-left: 1%;
+margin-right: 1%;
+}
+
+#so{
+float: right;
+font-style:oblique;
+font-size: 50px;
+margin:20px;
+margin-left: 45%;
+
+}#blanco
+{
+height: 100px;
+
+}
+#a{ 
+float: left;
+font-size: 50px;
+margin-right:20px;
+margin-bottom: 10px;
+margin-left: 0%;
+
+}
+#sob{
+float: right;
+background-color: rgb(175,122,197);
+height: 300px;
+margin-left: 105px;
+padding:30px ;
+font-size: 20px;
+
+}
+nav ul {
+  list-style: none;
+  overflow: hidden; /* Limpiamos errores de float */
+  float: left;
+  cursor:pointer;
+transition: .5s ease all;
+}
+nav ul li {
+
+  
+  width: 100%;
+}
+nav ul li a {
+  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  padding: 18px;
+  padding-left: 7.5px;
+  padding-bottom: 40px;
+  color: rgb(235, 222, 240);
+position: relative;
+z-index: 2;
+font-size: 18px;
+text-transform: uppercase;
+}
+
+nav ul::after{
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: rgb(175,122,197);
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+  top: -100%;
+left: 0;
+transition: 1s ease-in-out all;
+}
+nav ul:hover::after{
+top: 0  ;
+overflow: hidden;
+}
+
+ 
+  
+#marvel{
+  float: left;
+background-color: #B39DDB;
+  height: 100px;
+  margin-left: 105px;
+  padding:30px ;
+  font-size: 20px;
+
+width: 90%;
+}
+#marve{
+  font-size: 80px;
+  float: left;
+}
+
+.boton.cinco{
+  font-size: 20px;
+  width: 250px;
+  height: 100px;
+  border-radius: 45%;
+  float: right;
+background-color: bisque;
+border-color: rgb(0, 0, 0);
+
+border-width: 6px;
+border-style:double;
+color: burlywood;
+padding: 10px;
+cursor:pointer;
+position: relative;
+transition: .5s ease all;
+overflow: hidden;
+}
+.boton.cinco span{
+position: relative;
+z-index: 2;
+transition: .5s ease all;
+}
+.boton.cinco::after {
+ content: "";
+height: 100%;
+width: 100%;
+background:#6a9cde ;
+position: absolute;
+overflow: hidden;  
+z-index: 1;
+top: -88px;
+left: 0;
+transition: .8s ease-in-out all;
+}
+.boton.cinco:hover::after{
+top: 0;
+}
+.boton.cinco::before {
+content: "";
+height: 100%;
+width: 100%;
+background:  rgb(204, 162, 107) ;
+position: absolute;
+overflow: hidden;  
+z-index: 1;
+right: 240px;
+top: 0;
+transition: .6s ease-in-out all;
+}
+.boton.cinco:hover::before{
+right:  0;
+}
+.boton.cinco:hover{
+border-color: #6a9cde ;
+
+
+  height: 110px;
+  width: 260px;
+
+
+}
+#uno:hover, #dos:hover, #tres:hover, #cuatro:hover,#cinco:hover, #seis:hover,#siete:hover,#ocho:hover,#nueve:hover,#diez:hover,#once:hover,#doce:hover,#trece:hover,#catorce:hover,#quince:hover,#diesiseis:hover,#diesisiete:hover,#diesiocho:hover,#diesinueve:hover,#veinte:hover,#ventiuno:hover {
+  background-image: none;
+  background-color: #5783bc;
+  transition: 1s;
+  content-visibility: visible;
+  color: rgb(204, 162, 107);
+  font-size: 35px;
+width: 340px; 
+border-width: 20px;
+border-style: double;
+border: rgb(204, 162, 107);
+}
+#ropa{
+margin-left: 13%;
+margin-right: 8%;
+}
+#icon{
+  width: 100px;
+  
+  margin-right: 50px;
+}
+
+  
+  #des{
+    background-color: rgb(255, 255, 255);
+    content: "";
+    height: 0%;
+    width: 100%;
+    margin-top: 100%;
+    position: absolute;
+    overflow: hidden;  
+    z-index: 1;
+    left: 0;
+    transition: .8s ease-in-out all;
+  }
+  .uno:hover #des{
+  height: 50%;
+  margin-top: 25%;
+  }
+  
+  .uno{
+    height: 400px;
+    width: 200px; ;
+    margin-top: 40px;
+    background-image: url(http://cdn.shopify.com/s/files/1/0534/8809/1304/products/camisetas_deadpool_ninos_hombre_mujer_para_3.jpg?v=1621893000);
+    background-position: center;
+    background-size:cover;
+  border-width: 6px;
+  border-style:double;
+  
+  cursor:pointer;
+  position: relative;
+  transition: .5s ease all;
+  overflow: hidden;
+  float: left;
+  margin-left: 130px;
+  z-index: 1;
+  
+  }
+  
+  
+    .uno::after {
+     content: "";
+    height: 68%;
+    width: 100%;
+    background: #8d8d8da2 ;
+    position: absolute;
+    overflow: hidden;  
+    z-index: 0;
+    top: -401px;
+    left: 0;
+    transition: 1s ease-in-out all;
+    background-image:  url(https://cdn-icons-png.flaticon.com/512/3133/3133711.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position:initial;
+  
+    }
+    .uno:hover::after{
+    top: 0;
+    
+  }
+  
+  .uno::before {
+    content: "";
+   height: 68%;
+   width: 100%;
+  
+   position: absolute;
+   overflow: hidden;  
+   z-index: 4;
+   top: -401px;
+   left: 0;
+   transition: 1s ease-in-out all;
+  
+  background-size: 80px;
+  background-repeat: no-repeat;
+  background-position:right;
+  background-image: url(https://cdn-icons-png.flaticon.com/512/331/331953.png);
+   }
+   .uno:hover::before{
+   top: 0;
+   
+  }
+  #colores{
+    width: 20px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  #des h2, #des p{
+    float: left;
+    margin-left: 10px;
+  }
+    
+  #des{
+    background-color: rgb(255, 255, 255);
+    content: "";
+    height: 0%;
+    width: 100%;
+    margin-top: 100%;
+    position: absolute;
+    overflow: hidden;  
+    z-index: 1;
+    left: 0;
+    transition: .8s ease-in-out all;
+  }
+  .dos:hover #des{
+  height: 50%;
+  margin-top: 25%;
+  }
+  
+  .dos{
+    height: 400px;
+    width: 200px; ;
+    margin-top: 40px;
+    background-image: url(https://i0.wp.com/modogeeks.com/wp-content/uploads/2018/05/marvel-hm.png?fit=626%2C786&ssl=1);
+    background-position: center;
+    background-size:cover;
+  border-width: 6px;
+  border-style:double;
+  
+  cursor:pointer;
+  position: relative;
+  transition: .5s ease all;
+  overflow: hidden;
+  float: left;
+  margin-left: 130px;
+  z-index: 1;
+  
+  }
+  
+  
+    .dos::after {
+     content: "";
+    height: 68%;
+    width: 100%;
+    background: #8d8d8da2 ;
+    position: absolute;
+    overflow: hidden;  
+    z-index: 0;
+    top: -401px;
+    left: 0;
+    transition: 1s ease-in-out all;
+    background-image:  url(https://cdn-icons-png.flaticon.com/512/6073/6073033.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position:initial;
+  
+    }
+    .dos:hover::after{
+    top: 0;
+    
+  }
+  
+  
+  #colores{
+    width: 20px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  #des h2, #des p{
+    float: left;
+    margin-left: 10px;
+  }
+  
+  .tres:hover #des{
+    height: 50%;
+    margin-top: 25%;
+    }
+    
+    .tres{
+      height: 400px;
+      width: 200px; ;
+      margin-top: 40px;
+      background-image: url(https://http2.mlstatic.com/D_NQ_NP_723890-MCO41607890204_052020-O.jpg);
+      background-position: center;
+      background-size:cover;
+    border-width: 6px;
+    border-style:double;
+    
+    cursor:pointer;
+    position: relative;
+    transition: .5s ease all;
+    overflow: hidden;
+    float: left;
+    margin-left: 130px;
+    z-index: 1;
+    
+    }
+    
+    
+      .tres::after {
+       content: "";
+      height: 68%;
+      width: 100%;
+      background: #8d8d8da2 ;
+      position: absolute;
+      overflow: hidden;  
+      z-index: 0;
+      top: -401px;
+      left: 0;
+      transition: 1s ease-in-out all;
+      background-image:  url(https://cdn-icons-png.flaticon.com/512/6043/6043072.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position:initial;
+    
+      }
+      .tres:hover::after{
+      top: 0;
+      
+    }
+    
+    .tres::before {
+      content: "";
+     height: 68%;
+     width: 100%;
+    
+     position: absolute;
+     overflow: hidden;  
+     z-index: 4;
+     top: -401px;
+     left: 0;
+     transition: 1s ease-in-out all;
+    
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position:right;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/6831/6831000.png);
+     }
+     .tres:hover::before{
+     top: 0;
+     
+    }
+    #colores{
+      width: 20px;
+      float: left;
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+    #des h2, #des p{
+      float: left;
+      margin-left: 10px;
+    }
+        .uno:hover,.dos:hover, .tres:hover{
+          height: 500px;
+          width: 300px;
+        }
