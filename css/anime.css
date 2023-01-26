@@ -145,11 +145,11 @@ overflow: hidden;
     float: right;
     background-color: #B39DDB;
     height: 120px;
-    margin-left: 105px;
+    
     padding:30px ;
     text-align: right;
     font-size: 30px;
-    width: 90%;
+    width: 100%;
   }
   #anim{
     float: right;
